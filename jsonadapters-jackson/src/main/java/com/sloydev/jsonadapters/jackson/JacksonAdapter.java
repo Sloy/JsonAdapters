@@ -1,7 +1,8 @@
-package com.sloydev.jsonadapters;
+package com.sloydev.jsonadapters.jackson;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.sloydev.jsonadapters.JsonAdapter;
 
 import java.io.IOException;
 

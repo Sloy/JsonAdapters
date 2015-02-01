@@ -1,3 +1,5 @@
+package com.sloydev.jsonadapters.test;
+
 public class BasicTypesProperties {
 
     String string;

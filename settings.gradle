@@ -1,2 +1,5 @@
-rootProject.name = 'JsonAdapters'
+include 'jsonadapters-core'
+include 'jsonadapters-jackson'
+
+include 'jsonadapters-coretests'
 

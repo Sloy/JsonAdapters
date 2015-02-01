@@ -1,8 +1,10 @@
+package com.sloydev.jsonadapters.jackson;
+
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.sloydev.jsonadapters.JacksonAdapter;
 import com.sloydev.jsonadapters.JsonAdapter;
+import com.sloydev.jsonadapters.test.AbstractAdapterTest;
 import org.junit.Before;
 
 public class JacksonAdapterTest extends AbstractAdapterTest {

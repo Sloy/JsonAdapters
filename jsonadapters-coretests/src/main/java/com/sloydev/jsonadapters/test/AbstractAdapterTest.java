@@ -1,8 +1,11 @@
+package com.sloydev.jsonadapters.test;
+
 import com.sloydev.jsonadapters.JsonAdapter;
-import json.JSONObject;
+import com.sloydev.jsonadapters.test.json.JSONObject;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
+
 
 public abstract class AbstractAdapterTest {
     protected abstract JsonAdapter getAdapter();

@@ -1,4 +1,4 @@
-package json;
+package com.sloydev.jsonadapters.test.json;
 
 /**
  * The JSONException is thrown by the JSON.org classes when things are amiss.

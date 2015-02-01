@@ -1,11 +1,6 @@
-package json;
+package com.sloydev.jsonadapters.test.json;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
-import java.io.StringReader;
+import java.io.*;
 
 /*
 Copyright (c) 2002 JSON.org
@@ -182,7 +177,7 @@ public class JSONTokener {
      * character.
      * @param c The character to match.
      * @return The character.
-     * @throws JSONException if the character does not match.
+     * @throws com.sloydev.jsonadapters.test.json.JSONException if the character does not match.
      */
     public char next(char c) throws JSONException {
         char n = this.next();
@@ -199,7 +194,7 @@ public class JSONTokener {
      *
      * @param n     The number of characters to take.
      * @return      A string of n characters.
-     * @throws JSONException
+     * @throws com.sloydev.jsonadapters.test.json.JSONException
      *   Substring bounds error if there are not
      *   n characters remaining in the source string.
      */
@@ -224,7 +219,7 @@ public class JSONTokener {
 
     /**
      * Get the next char in the string, skipping whitespace.
-     * @throws JSONException
+     * @throws com.sloydev.jsonadapters.test.json.JSONException
      * @return  A character, or 0 if there are no more characters.
      */
     public char nextClean() throws JSONException {
@@ -246,7 +241,7 @@ public class JSONTokener {
      *      <code>"</code>&nbsp;<small>(double quote)</small> or
      *      <code>'</code>&nbsp;<small>(single quote)</small>.
      * @return      A String.
-     * @throws JSONException Unterminated string.
+     * @throws com.sloydev.jsonadapters.test.json.JSONException Unterminated string.
      */
     public String nextString(char quote) throws JSONException {
         char c;
@@ -346,7 +341,7 @@ public class JSONTokener {
     /**
      * Get the next value. The value can be a Boolean, Double, Integer,
      * JSONArray, JSONObject, Long, or String, or the JSONObject.NULL object.
-     * @throws JSONException If syntax error.
+     * @throws com.sloydev.jsonadapters.test.json.JSONException If syntax error.
      *
      * @return An object.
      */
