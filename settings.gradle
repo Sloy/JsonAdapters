@@ -3,3 +3,5 @@ include 'jsonadapters-jackson'
 
 include 'jsonadapters-coretests'
 
+include 'jsonadapters-gson'
+
