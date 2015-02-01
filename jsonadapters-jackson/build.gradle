@@ -1,4 +1,5 @@
 apply plugin: 'java'
+apply plugin: 'maven'
 
 sourceCompatibility = 1.7
 version = '1.0'
@@ -9,9 +10,17 @@ repositories {
 
 dependencies {
     compile project(':jsonadapters-core')
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.2.4'
+    compile 'com.fasterxml.jackson.core:jackson-core:2.2.4'
     testCompile project(':jsonadapters-coretests')
     testCompile group: 'junit', name: 'junit', version: '4.11'
     testCompile 'org.assertj:assertj-core:1.7.1'
-    compile 'com.fasterxml.jackson.core:jackson-databind:2.2.4'
-    compile 'com.fasterxml.jackson.core:jackson-core:2.2.4'
 }
+
+jar {
+    baseName = 'jsonadapters-jackson'
+    version = '0.1.0'
+}
+
+version = "0.1.0-SNAPSHOT"
+group = "com.sloydev.jsonadapters"
