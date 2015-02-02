@@ -1,8 +1,8 @@
 apply plugin: 'java'
-apply plugin: 'maven'
+apply plugin: 'bintray-release'
 
 sourceCompatibility = 1.7
-version = '1.0'
+version = '0.1.0'
 
 repositories {
     mavenCentral()
@@ -22,5 +22,11 @@ jar {
     version = '0.1.0'
 }
 
-version = "0.1.0-SNAPSHOT"
-group = "com.sloydev.jsonadapters"
+publish {
+    userOrg = 'sloy'
+    groupId = 'com.sloydev'
+    artifactId = 'jsonadapters-jackson'
+    version = '0.1.0'
+    description = 'Jackson Module for JsonAdapters library'
+    website = 'https://github.com/Sloy/JsonAdapters'
+}

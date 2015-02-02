@@ -1,7 +1,8 @@
 apply plugin: 'java'
+apply plugin: 'bintray-release'
 
 sourceCompatibility = 1.7
-version = '1.0'
+version = '0.1.0'
 
 repositories {
     mavenCentral()
@@ -11,4 +12,14 @@ dependencies {
     compile project(':jsonadapters-core')
     compile 'org.assertj:assertj-core:1.7.1'
     compile group: 'junit', name: 'junit', version: '4.11'
+}
+
+
+publish {
+    userOrg = 'sloy'
+    groupId = 'com.sloydev'
+    artifactId = 'jsonadapters-coretests'
+    version = '0.1.0'
+    description = 'Generic tests module for testing custom JsonAdapters'
+    website = 'https://github.com/Sloy/JsonAdapters'
 }
